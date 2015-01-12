@@ -19,10 +19,22 @@ img {
 }
 
 .hand-hour {
+    transition: rotate(360deg);
 }
 
 .hand-minute {
+    transition: rotate(360deg);
     
+}
+
+.clock-face:hover .hand-hour{
+    transform: rotate(360deg);
+    transition: all 2000ms linear;
+}
+
+.clock-face:hover .hand-minute{
+    transform: rotate(-360deg);
+    transition: all 1000ms linear;
 }
 
 .clock-face {
