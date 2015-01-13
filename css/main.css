@@ -20,11 +20,12 @@ img {
 
 .hand-hour {
     transition: rotate(360deg);
+    transform-origin: center bottom;
 }
 
 .hand-minute {
     transition: rotate(360deg);
-    
+    transform-origin: center bottom;
 }
 
 .clock-face:hover .hand-hour{
@@ -33,7 +34,7 @@ img {
 }
 
 .clock-face:hover .hand-minute{
-    transform: rotate(-360deg);
+    transform: rotate(360deg);
     transition: all 1000ms linear;
 }
 
